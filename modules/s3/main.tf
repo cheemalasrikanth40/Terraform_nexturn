@@ -1,4 +1,4 @@
-resource "aws_s3_bucket" "this" {
+resource "aws_s3_bucket" "bucket" {
   bucket = var.bucket_name
 
   versioning {
@@ -15,6 +15,7 @@ resource "aws_s3_bucket" "this" {
   }
 }
 
+/*
 resource "aws_s3_bucket_public_access_block" "this" {
   bucket = aws_s3_bucket.this.id
 
@@ -23,3 +24,4 @@ resource "aws_s3_bucket_public_access_block" "this" {
   ignore_public_acls  = true
   restrict_public_buckets = true
 }
+*/
