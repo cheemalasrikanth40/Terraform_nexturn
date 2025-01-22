@@ -11,7 +11,6 @@ resource "aws_s3_bucket" "bucket" {
 
   tags = {
     Name        = "Terraform State Bucket"
-    Owner       = "Srikanth"
     Environment = var.environment
   }
 }
